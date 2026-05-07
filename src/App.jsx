@@ -204,6 +204,9 @@ function App() {
     setContactStatus({ type: "", message: "" });
 
     const subject = contactForm.subject.trim() || "Portfolio contact";
+    const cleanName = contactForm.name.trim();
+    const cleanEmail = contactForm.email.trim();
+    const cleanMessage = contactForm.message.trim();
 
     try {
       const response = await fetch(`https://formsubmit.co/ajax/${contactEmail}`, {
@@ -213,11 +216,14 @@ function App() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          name: contactForm.name,
-          email: contactForm.email,
-          _replyto: contactForm.email,
+          "From Name": cleanName,
+          "From Email": cleanEmail,
+          Subject: subject,
+          Message: cleanMessage,
+          _replyto: cleanEmail,
           _subject: subject,
-          message: contactForm.message,
+          _template: "table",
+          _captcha: "false",
         }),
       });
 
@@ -492,6 +498,10 @@ function App() {
               <div>
                 <p className="section-kicker">Send message</p>
                 <h2 id="contact-modal-title">Contact On Khea</h2>
+                <p className="modal-note">
+                  Messages send to {contactEmail}. The email may arrive from the
+                  form service, but your name and email will be inside the message.
+                </p>
               </div>
               <button className="modal-close" type="button" onClick={closeContactModal} aria-label="Close contact form">
                 X

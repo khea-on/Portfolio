@@ -742,6 +742,13 @@ a {
   line-height: 1.1;
 }
 
+.modal-note {
+  max-width: 500px;
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .modal-close {
   display: grid;
   width: 2.4rem;
