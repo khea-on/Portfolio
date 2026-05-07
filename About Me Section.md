@@ -1,0 +1,3 @@
+I am a software developer focused on building business applications, ERP modules, REST APIs, and database-driven systems. My main stack includes C#, ASP.NET Web API, ASP.NET MVC, Entity Framework, SQL Server, and DevExpress MVC.
+
+I have hands-on experience creating sales order APIs, shipment APIs, payment collection logic, customer master import tools, inventory queries, audit planning modules, and background integration services. I enjoy solving real business problems with clean backend logic, strong database design, and practical API development.
