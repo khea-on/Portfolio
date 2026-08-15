@@ -16,7 +16,7 @@ The dev server is configured to use `http://127.0.0.1:5174/` because some Window
 ```bash
 npm run build
 ```
-
+redeploy
 ## Deploy to Vercel
 
 Use these settings when importing the project in Vercel:
