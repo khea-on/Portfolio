@@ -21,6 +21,10 @@ const focusAreas = [
     label: "Clean REST endpoints with DTOs, filters, pagination, and response models",
   },
   {
+    value: "React",
+    label: "Modern frontend portfolio pages and business-facing interfaces",
+  },
+  {
     value: "SQL",
     label: "Tables, joins, stored procedures, migration scripts, and troubleshooting",
   },
@@ -41,7 +45,7 @@ const skillGroups = [
   },
   {
     title: "Frontend",
-    items: ["React.js", "JavaScript", "Vite", "Responsive UI", "Portfolio websites"],
+    items: ["React.js", "React components", "JavaScript", "Vite", "Responsive UI", "Portfolio websites"],
   },
 ];
 
@@ -57,6 +61,19 @@ const projects = [
       "Filter by sale order number",
       "Date range search",
       "Limit and offset pagination",
+    ],
+  },
+  {
+    title: "React.js Developer Portfolio",
+    category: "Frontend Portfolio",
+    description:
+      "Responsive single-page portfolio built with React.js and Vite to present developer profile, skills, projects, services, and contact flow in a clean professional UI.",
+    tech: ["React.js", "JavaScript", "Vite", "CSS", "Responsive UI"],
+    features: [
+      "Reusable content sections",
+      "Project and service cards",
+      "Responsive desktop and mobile layout",
+      "Contact form modal",
     ],
   },
   {
@@ -273,13 +290,14 @@ function App() {
             <div className="hero-content">
               <p className="hero-badge">
                 <span aria-hidden="true" />
-                Backend developer portfolio
+                Backend and React.js developer portfolio
               </p>
-              <h1 id="hero-title">Backend systems for ERP, API, and SQL Server workflows.</h1>
+              <h1 id="hero-title">Backend systems and React.js interfaces for ERP workflows.</h1>
               <p className="hero-copy">
                 I build practical business applications using C#, ASP.NET Web API,
-                Entity Framework, SQL Server, and DevExpress MVC. My focus is clean
-                backend logic that helps real ERP workflows run smoothly.
+                Entity Framework, SQL Server, DevExpress MVC, and React.js. My focus
+                is clean backend logic with modern frontend pages that help real ERP
+                workflows run smoothly.
               </p>
               <div className="hero-actions">
                 <a className="button primary" href="#projects">
@@ -322,7 +340,7 @@ function App() {
                 </div>
                 <div>
                   <span>UI work</span>
-                  <strong>DevExpress MVC screens</strong>
+                  <strong>React.js and DevExpress MVC screens</strong>
                 </div>
               </div>
             </aside>
@@ -344,6 +362,11 @@ function App() {
             <span>03</span>
             <strong>Integration ready</strong>
             <p>Background services, SAP Business One integration, token handling, and request logs.</p>
+          </div>
+          <div>
+            <span>04</span>
+            <strong>React.js frontend</strong>
+            <p>Portfolio pages and responsive business interfaces built with React.js, Vite, and CSS.</p>
           </div>
         </section>
 

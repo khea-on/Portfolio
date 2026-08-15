@@ -279,7 +279,7 @@ a {
 
 .hero-proof {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.85rem;
   margin-top: 2.3rem;
 }
@@ -385,7 +385,7 @@ a {
 
 .quick-stack {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
   width: min(1180px, calc(100% - 2rem));
   margin: -1.1rem auto 0;
@@ -851,7 +851,7 @@ a {
   }
 
   .quick-stack {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .skill-matrix {
@@ -862,6 +862,14 @@ a {
     min-height: auto;
     border-right: 0;
     border-bottom: 1px solid rgba(187, 209, 231, 0.12);
+  }
+
+  .quick-stack div:nth-child(odd) {
+    border-right: 1px solid rgba(187, 209, 231, 0.12);
+  }
+
+  .quick-stack div:nth-last-child(-n + 2) {
+    border-bottom: 0;
   }
 
   .quick-stack div:last-child {
@@ -918,10 +926,19 @@ a {
 
   .hero-proof,
   .profile-showcase,
+  .quick-stack,
   .skill-matrix,
   .project-grid,
   .service-grid {
     grid-template-columns: 1fr;
+  }
+
+  .quick-stack div:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .quick-stack div:not(:last-child) {
+    border-bottom: 1px solid rgba(187, 209, 231, 0.12);
   }
 
   .profile-photo {
