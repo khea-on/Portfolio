@@ -17,35 +17,76 @@ const focusAreas = [
     label: "Sales, shipment, inventory, customer, payment, and audit workflows",
   },
   {
-    value: "API",
-    label: "Clean REST endpoints with DTOs, filters, pagination, and response models",
+    value: "API & .NET",
+    label: "Clean REST endpoints with .NET 8 / ASP.NET, DTOs, pagination, and Swagger",
   },
   {
-    value: "React",
-    label: "Modern frontend portfolio pages and business-facing interfaces",
+    value: "Database",
+    label: "SQL Server tables, stored procedures, EF Core, migrations, and performance",
   },
   {
-    value: "SQL",
-    label: "Tables, joins, stored procedures, migration scripts, and troubleshooting",
+    value: "Frontend & Mobile",
+    label: "Modern React.js web apps, DevExpress MVC screens, and Flutter mobile",
   },
 ];
 
 const skillGroups = [
   {
-    title: "Backend",
-    items: ["C#", "ASP.NET Web API", "ASP.NET MVC", ".NET Framework 4.8", "REST API design"],
+    title: "Backend & .NET",
+    items: [
+      "C#",
+      ".NET 8 / .NET Core",
+      "ASP.NET Web API",
+      "ASP.NET MVC",
+      ".NET Framework 4.8",
+      "REST API Design",
+      "Clean Architecture",
+    ],
   },
   {
-    title: "Database",
-    items: ["SQL Server / T-SQL", "Entity Framework / EF Core", "LINQ queries", "Stored procedures", "DTO mapping"],
+    title: "Database & ORM",
+    items: [
+      "SQL Server / T-SQL",
+      "Entity Framework / EF Core",
+      "LINQ Queries",
+      "Stored Procedures",
+      "DTO Mapping",
+      "Data Migration & ETL",
+    ],
   },
   {
-    title: "Business Systems",
-    items: ["ERP system development", "SAP Business One integration", "Background jobs", "DevExpress MVC UI", "Debugging"],
+    title: "Enterprise & Business Systems",
+    items: [
+      "ERP Module Development",
+      "SAP Business One Integration",
+      "Sun System Integration",
+      "Background Jobs / Quartz",
+      "Excel Batch Importer",
+      "Audit & Payment Systems",
+    ],
   },
   {
-    title: "Frontend",
-    items: ["React.js", "React components", "JavaScript", "Vite", "Responsive UI", "Portfolio websites"],
+    title: "Frontend & Mobile",
+    items: [
+      "React.js",
+      "Vite",
+      "JavaScript (ES6+)",
+      "Flutter / Dart",
+      "DevExpress MVC UI",
+      "Responsive CSS",
+      "Single Page Applications",
+    ],
+  },
+  {
+    title: "Tools & Integration",
+    items: [
+      "Git / GitHub",
+      "Swagger / OpenAPI",
+      "Postman",
+      "Vercel Deployment",
+      "SEO & Search Console",
+      "AI Prompt Engineering",
+    ],
   },
 ];
 
@@ -64,16 +105,29 @@ const projects = [
     ],
   },
   {
-    title: "React.js Developer Portfolio",
-    category: "Frontend Portfolio",
+    title: "Core Banking & Financial API",
+    category: "Banking System",
     description:
-      "Responsive single-page portfolio built with React.js and Vite to present developer profile, skills, projects, services, and contact flow in a clean professional UI.",
-    tech: ["React.js", "JavaScript", "Vite", "CSS", "Responsive UI"],
+      "Clean architecture financial service API and Flutter mobile client with account management, transaction tracking, Swagger docs, and automated dev runners.",
+    tech: ["C#", ".NET 8 Web API", "SQL Server", "EF Core", "Flutter", "Swagger"],
     features: [
-      "Reusable content sections",
+      "Account and transaction endpoints",
+      "Swagger API documentation",
+      "Clean Architecture backend",
+      "Flutter mobile integration",
+    ],
+  },
+  {
+    title: "React.js Developer Portfolio",
+    category: "Frontend & SEO",
+    description:
+      "Responsive single-page portfolio built with React.js and Vite featuring comprehensive SEO meta tags, Open Graph, schema markup, and smooth navigation.",
+    tech: ["React.js", "JavaScript", "Vite", "CSS", "SEO & Schema"],
+    features: [
+      "Reusable component architecture",
       "Project and service cards",
-      "Responsive desktop and mobile layout",
-      "Contact form modal",
+      "Open Graph & Schema SEO",
+      "Contact form modal integration",
     ],
   },
   {
@@ -158,41 +212,47 @@ const projects = [
 
 const services = [
   {
-    title: "ASP.NET Web API Development",
-    text: "REST APIs for ERP, sales, inventory, shipment, customer, and payment modules.",
+    title: "ASP.NET & .NET Core API Development",
+    text: "High-performance REST APIs for ERP, banking, sales, inventory, shipment, customer, and payment modules.",
   },
   {
-    title: "SQL Server Development",
-    text: "Tables, queries, update scripts, stored procedures, joins, and migration scripts.",
+    title: "SQL Server & Database Architecture",
+    text: "Tables, queries, update scripts, stored procedures, joins, indexing, and data migration scripts.",
   },
   {
-    title: "ERP Module Development",
+    title: "ERP & Enterprise Module Development",
     text: "Business modules for customer master, sales orders, shipment, payment collection, inventory, and audit planning.",
   },
   {
-    title: "API Integration",
-    text: "Internal ERP integrations, external APIs, SAP Business One, and background services.",
+    title: "System Integration & Background Services",
+    text: "Connecting ERP systems with SAP Business One, Sun systems, third-party APIs, and Quartz background workers.",
   },
   {
     title: "DevExpress MVC UI Development",
-    text: "Popup forms, grid views, callback panels, and business screens using DevExpress MVC.",
+    text: "Popup forms, grid views, callback panels, and enterprise business screens using DevExpress MVC.",
   },
   {
-    title: "React.js Portfolio UI",
-    text: "Modern portfolio and business-facing frontend pages using React.js, JavaScript, and responsive CSS.",
+    title: "React.js & Web Frontend",
+    text: "Modern single-page applications and portfolio interfaces using React.js, JavaScript, and responsive CSS.",
   },
   {
-    title: "Debugging and System Fixing",
-    text: "API errors, SQL errors, DLL version issues, Entity Framework issues, and deployment problems.",
+    title: "Mobile Integration with Flutter",
+    text: "Connecting mobile frontends to .NET REST APIs with clean data models and responsive mobile UX.",
+  },
+  {
+    title: "Debugging & System Troubleshooting",
+    text: "Resolving API issues, SQL bottlenecks, DLL dependency issues, EF Core migrations, and production bugs.",
   },
 ];
 
 const experience = [
-  "ERP-style sales, shipment, customer, inventory, payment, and audit workflows",
-  "API endpoints, DTO models, LINQ queries, SQL scripts, stored procedures, and database tables",
-  "SAP Business One and Sun integration background services with logging and authentication",
+  "ERP-style sales, shipment, customer, inventory, payment, and audit workflow modules",
+  "RESTful APIs, DTO models, LINQ queries, SQL scripts, stored procedures, and relational table design",
+  "Core Banking & Financial service architecture with .NET 8, EF Core, and Flutter mobile client",
+  "SAP Business One and Sun integration background services with logging, token handling, and scheduling",
   "DevExpress MVC grids, popup forms, callback panels, and data entry screens",
-  "AI-assisted content creation for TikTok, Facebook, and YouTube prompts",
+  "React.js modern web applications, responsive styling, Vite builds, and SEO deployment",
+  "AI-assisted content creation and workflow automation for TikTok, Facebook, and YouTube",
 ];
 
 function App() {
